@@ -52,6 +52,12 @@ DROP_SECTIONS = [
     r'Medications on Admission:',
     r'Discharge Instructions?:',
     r'Followup Instructions?:',
+    r'Brief Hospital Course:',
+    r'Hospital Course:',
+    r'Discharge Diagnosis:',
+    r'FINAL DIAGNOSIS:',
+    r'Discharge Disposition:',
+    r'Discharge Condition:',
 ]
 DROP_RE = re.compile(
     r'(?is)\b(?:' + r'|'.join(DROP_SECTIONS) + r')\b\s*.*?(?=' + CAP_HEADER + r'|\Z)'
@@ -66,13 +72,7 @@ KEEP_HEAD = (
     r'Plan:|'
     r'Problem List:|'
     r'Past Medical History:|'
-    r'PMH:|'
-    r'Brief Hospital Course:|'
-    r'Hospital Course:|'
-    r'Discharge Diagnosis:|'
-    r'FINAL DIAGNOSIS:|'
-    r'Discharge Disposition:|'
-    r'Discharge Condition:'
+    r'PMH:'
 )
 KEEP_BLOCK_RE = re.compile(
     r'(?is)(?:^|\n)\s*(?:' + KEEP_HEAD + r')\s*(.*?)(?=' + CAP_HEADER + r'|\Z)'
