@@ -65,7 +65,7 @@ Run:
 - `clean_notes_*.py`
 - `MV-COMBINE-DATASETS_*.ipynb`
 
-### 2. Train Individual Models
+### 2. Train Individual Modality Models
 Run:
 - Structured: `Task*-STRUCTUREDDATA-FINAL.ipynb`
 - Notes: `Task*-CLINICALNOTES-FINAL.ipynb`
