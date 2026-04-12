@@ -40,11 +40,11 @@ This project uses:
 
 * done separately for ED disposition and ED triage prediction timepoints
 
-### Indvidiual Modality Models
+### Indvidual Modality Models
 
-- `Task*-Masha-STRUCTUREDDATA-FINAL.ipynb` Structured data models
-- `Task*-Masha-CLINICALNOTES-FINAL.ipynb` Clinical note data models
-- `Task*-Masha-ECGDATA-FINAL.ipynb` ECG data models
+- `Task*-STRUCTUREDDATA-FINAL.ipynb` Structured data models
+- `Task*-CLINICALNOTES-FINAL.ipynb` Clinical note data models
+- `Task*-ECGDATA-FINAL.ipynb` ECG data models
 
 ### Multimodal Models
 - `MULTIMODAL_MODEL_task1.ipynb` Task 1 Multimodal Model
